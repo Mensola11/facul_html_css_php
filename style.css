@@ -1,41 +1,198 @@
 
 * {
-  background-color: #391515;
+  background:none;
   font-family: Segoe UI, sans-serif;
   color: #FFFFFF;
+  margin: 0;
+}
+.header {
+  background: linear-gradient(to bottom, #020000, #310708);
+  color: #FFFFFF;            
+  font-family: Segoe UI, sans-serif; 
+  text-align: center;
+  padding: 10px;                       
 }
 .body {
-  background-color: #391515;
+  justify-content: space-between;
+  background-color: #310708;
   font-family: Segoe UI, sans-serif;
   color: #FFFFFF;            
   font-family: Segoe UI, sans-serif; 
-  text-align: center;        
-  margin: 0;                 
-  padding: 0;                
+  text-align: center;                       
+}
+.bbg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+  background-color: #310708;
+  font-family: Segoe UI, sans-serif;
+  color: #FFFFFF;            
+  font-family: Segoe UI, sans-serif; 
+  font-size: 20px;
+  align-items: stretch;
+  gap: 30px;                       
+}
+#saudacoes {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  box-sizing: border-box;
+  border: 2px solid #eea707;
+  border-radius: 5px;
+  background-color: #1a0102;
+  font-family: Segoe UI, sans-serif;
+  color: #FFFFFF;            
+  font-family: Segoe UI, sans-serif; 
+  font-size: 20px;
+  text-align: left;                       
+}
+#feedback {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  box-sizing: border-box;
+  border: 2px solid #eea707;
+  border-radius: 5px;
+  background-color: #1a0102;
+  font-family: Segoe UI, sans-serif;
+  color: #FFFFFF;            
+  font-family: Segoe UI, sans-serif; 
+  text-align: right; 
+}
+#h1 {
+  font-size: 60px;  
+  color:#FFFFFF;          
+  font-family: Segoe UI, sans-serif; 
+  text-align: left;      
+  padding: 10px;
+  margin-left: 10%;
+}
+#h4 {
+  font-size: 30px;  
+  color:#FFFFFF;          
+  font-family: Segoe UI, sans-serif; 
+  text-align: left;      
+  padding: 10px;
+  margin-left: 10%;
+}
+#h1_main {
+  font-size: 60px;  
+  color:#FFFFFF;          
+  font-family: Segoe UI, sans-serif; 
+  text-align: center;      
+  padding: 20px;
+}
+#label{
+  font-size: 25px;  
+  color:#FFFFFF;          
+  font-family: Segoe UI, sans-serif; 
+  text-align: center;     
+  padding: 25px;
+  box-sizing: border-box;
+}
+#mensagem{
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  color:#FFFFFF;          
+  font-family: Segoe UI, sans-serif;    
+  padding: 5px;
+  border-radius: 5px; 
+  box-sizing: border-box;
+}
+.product-list {
+  display: inline-block;
+  column-count: 2;             
+  justify-content: center;  
+  gap: 20px;                
+  padding: 20px;            
+  list-style: none;       
+}
+.contact-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  list-style: none;  
+  padding: 15px;     
+}
+#contato-img {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  padding: 0;
+  margin: auto;
+}
+#redes {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  padding-left: auto;
+  padding-right: auto;
+  margin: auto;
 }
 .footer {
-    background-color: #391515; 
-    color: #FFFFFF;            
+  background: linear-gradient(to top, #020000, #310708);
+    color: #020000;            
     font-family: Segoe UI, sans-serif; 
     text-align: center;        
-    padding: 10px;
+    padding: 25px;
 }
 .marquee-container {
   width: 100%;               
   overflow: hidden;         
-  background: transparent;   
-  color: #eea707;          
+  background: transparent;             
   font-size: 72px;           
   white-space: nowrap;      
   padding: 8px 0;            
 }
 .marquee-text {
   display: inline-block;     
-  padding-left: 100%;       
-  animation: marquee 15s linear infinite; 
+  padding-left: 100%; 
+  color: #eea707;      
+  animation: marquee 25s linear infinite; 
   font-weight: bold;         
   font-family: Segoe UI, sans-serif; 
 }
+.nav-buttons, #botao-enviar{
+  background-color: #391515; 
+  color: #eea707;            
+  font-family: Segoe UI, sans-serif; 
+  padding: 10px 20px;        
+  border: 2px solid #eea707;              
+  border-radius: 5px;       
+  cursor: pointer;
+
+}
+.nav-buttons:hover #botao-enviar:hover{ 
+  background-color: #391515; 
+  color: #FFFFFF;
+  transition-duration: 0.3s;          
+  font-family: Helvetica, sans-serif;
+  padding: 10px 20px;        
+  border: 2px solid #eea707;              
+  border-radius: 5px;       
+  cursor: pointer;
+           
+}
+.bg-diagonal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('imgs/sports-tools.jpg'); 
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(100% 100%, 100% 100%, 0 100%, 100% 0);
+  z-index: -1;
+
+}
+
 @keyframes marquee {
   0% { transform: translateX(0); }     
   100% { transform: translateX(-100%); } 

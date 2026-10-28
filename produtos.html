@@ -2,46 +2,59 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imgs/logo.png?v=1">
     <title>Produtos - ES Sports</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<div class="body">
+    <div class="header">
     <header>
-        <img src="/imgs/logo.png" width="100" height="100" align="left">
+        <img src="imgs/logo.png" width="100" height="100" align="left">
         <br>
-        <font color="#eea707" size="12" border="3" bordercolor="#eea707" align="left">ES Sports</font>
-        <hr color="#eea707" size="1" width="75%">
+        <h1 id="h1">ES Sports</h1>
+        <hr style="border:none;background-color:#eea707;height:5px;width:100%;">
         <br>
     </header>
+    </div>
+    <div class="body">
     <nav style="display: flex; justify-content: center; gap: 60px; padding: 10px; font-size: 22px;">
-        <a href="index.html">Home</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="contato.html">Contato</a>
+        <div class="nav-buttons" onclick="window.location.href='index.html'">Home</div>
+        <div class="nav-buttons" onclick="window.location.href='produtos.html'">Produtos</div>
+        <div class="nav-buttons" onclick="window.location.href='contato.html'">Contato</div> 
     </nav>
-    <h2 align="center">Nossos Produtos</h2>
-    <p>Aqui você encontrará uma variedade de materiais esportivos de alta qualidade.</p>
-    <ul>
-        <li>Camisas de Futebol</li>
-        <br>
-        <img src="/imgs/mengao.webp" alt="Camisa de Futebol" width="200" height="200">
-        <br>
-        <li>Chuteiras</li>
-        <br>
-        <img src="/imgs/chuteiras.jfif" alt="Chuteira" width="200" height="200">
-        <br>
-        <li>Bolas</li>
-        <br>
-        <img src="/imgs/bolas_fut.jfif" alt="Bola de Futebol" width="200" height="200">
-        <br>
-        <li>Equipamentos de Academia</li>
-        <br>
-        <img src="/imgs/equipamentos_academia.jfif" alt="Equipamento de Academia" width="200" height="200">
-        <br>
-    </ul>
-    <hr>
-    <footer>
-        <p>&copy; 2026 ES Sports. Todos os direitos reservados.</p>
-    </footer>
-
+    <h1 id="h1">Nossos Produtos</h1>
+    <h3 id="h3">Aqui você encontrará uma variedade de materiais esportivos de alta qualidade.</h3>
+    <div class="product-list">
+        <ul>
+            
+            <br>
+            <img src="imgs/baiar.png" alt="Camisa de Futebol" width="200" height="200">
+            <li>Camisas de Futebol</li>
+            <br>
+            <img src="imgs/chuteiras.png" alt="Chuteira" width="200" height="200">
+            <br>
+            <li>Chuteiras</li>
+            <br>
+            <img src="imgs/bolas_fut.png" alt="Bola de Futebol" width="200" height="200">
+            <br>
+            <li>Bolas</li>
+            <br>
+            <img src="imgs/birl.png" alt="Equipamento de Academia" width="200" height="200">
+            <br>
+            <li>Equipamentos de Academia</li>
+            <br>
+            <br>
+        </ul>
+    </div>
+    <p align="center">E muito mais!</p>
+    <br>    
+    <hr style="border:none;background-color:#eea707;height:5px;width:100%;">
+    <br>
+    <div class="footer">
+        <footer>
+            <p>&copy; 2026 ES Sports. Todos os direitos reservados.</p>
+            <br>
+        </footer>
+    </div>
 
 

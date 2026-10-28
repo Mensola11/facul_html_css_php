@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Site com Seletores</title>
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header>
+        <h1>Bem-vindo ao Meu Site!</h1>
+        <p>Aprender HTML é o primeiro passo para se tornar um desenvolvedor web.</p>
+    </header>
+
+    <hr>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção Sobre Mim -->
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é <strong>Seu Nome</strong>. Estou criando este site para praticar conceitos básicos de tags HTML, links e imagens.</p>
+        </section>
+
+        <!-- Seção de Interesses/Hobbies -->
+        <section>
+            <h2>Meus Hobbies Favoritos</h2>
+            <ul>
+                <li>Estudar programação </li>
+                <li>Ouvir música e podcasts </li>
+                <li>Assistir a filmes e séries </li>
+            </ul>
+        </section>
+
+        <!-- Seção: Formulário de Contato e Pesquisa -->
+        <section>
+            <h2>Entre em Contato e Opine</h2>
+            <form action="#" method="POST">
+                <!-- Campo de Texto (Nome) -->
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </p>
+
+                <!-- Campo de E-mail -->
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </p>
+
+                <!-- NOVO: Marcador de Seleção Única (Radio Buttons) -->
+                <p>
+                    <label>Qual o seu nível em HTML?</label><br>
+                    <input type="radio" id="iniciante" name="nivel_html" value="iniciante" checked>
+                    <label for="iniciante">Iniciante</label><br>
+                    
+                    <input type="radio" id="intermediario" name="nivel_html" value="intermediario">
+                    <label for="intermediario">Intermediário</label><br>
+                    
+                    <input type="radio" id="avancado" name="nivel_html" value="avancado">
+                    <label for="avancado">Avançado</label>
+                </p>
+
+                <!-- NOVO: Marcador de Múltipla Escolha (Checkboxes) -->
+                <p>
+                    <label>Quais tecnologias você quer aprender?</label><br>
+                    <input type="checkbox" id="tech_css" name="interesses" value="css">
+                    <label for="tech_css">CSS (Estilos)</label><br>
+                    
+                    <input type="checkbox" id="tech_js" name="interesses" value="javascript">
+                    <label for="tech_js">JavaScript (Programação)</label><br>
+                    
+                    <input type="checkbox" id="tech_bd" name="interesses" value="banco_dados">
+                    <label for="tech_bd">Banco de Dados</label>
+                </p>
+
+                <!-- Campo de Mensagem -->
+                <p>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                </p>
+
+                <!-- Botões do Formulário -->
+                <p>
+                    <button type="submit">Enviar Mensagem</button>
+                    <button type="reset">Limpar Campos</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 - Desenvolvido por Você.</p>
+    </footer>
+
+</body>
+</html>
+
+

@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <title>ES Sports</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imgs/logo.png?v=1">
+    <title>ES Sports</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<div class="*">
-<div class="body">
-
+<div class="header">
     <header>
-        <img src="/imgs/logo.png" width="200" height="200" align="center">
+        <nav style="display: flex; justify-content: left; gap: 45px; padding: 6px; font-size: 22px;">
+            <div class="nav-buttons" onclick="window.location.href='index.html'">Home</div>
+            <div class="nav-buttons" onclick="window.location.href='produtos.html'">Produtos</div>
+            <div class="nav-buttons" onclick="window.location.href='contato.html'">Contato</div>
+        </nav>
+        <img src="imgs/logo.png" width="150" height="150" align="center">
+        <h1 id="h1_main">ES Sports</h1>
         <br>
-        <font color="#eea707" size="12" bordercolor="#eea707">ES Sports</font>
-        <hr color="#eea707" size="1" width="75%">
+        <hr style="border:none;background-color:#eea707;height:5px;width:100%;">
         <div class="marquee-container">
-        <div class="marquee-text">A melhor loja de materiais esportivos</div>
+            <div class="marquee-text">A sua loja de materiais esportivos</div>
         </div>
         <br>
-        <hr color="#eea707" size="1" width="75%">
+        <hr style="border:none;background-color:#eea707;height:5px;width:100%;">
     </header>
-    <nav style="display: flex; justify-content: center; gap: 60px; padding: 10px; font-size: 22px;">
-        <a href="index.html">Home</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-    <h2 align="center">Seja bem-vindo à ES Sports!</h2>
-    
-    <h3>Aqui você irá encontrar os melhores materiais esportivos!</h3>
-    
-    <h3> Clique na aba <b>"Produtos"</b> para conhecer nossas ofertas:</h3>
-<br><br><hr>
-<br><br> 
-    <form action="#" method="post">   
-        <label for="mensagem">Deixe seu comentário, isso nos ajuda a melhorar!</label>
-        <br>
-        <br>
-        <textarea id="mensagem" name="mensagem" rows="4" cols="30" placeholder="Escreva aqui..."></textarea><br><br>
-        <input type="submit" value="Enviar">
-    </form>
-    </section>
-    <hr>
+</div>
+<div class="body">
+    <body>
+        <div class="bbg">
+            <section id="saudacoes">
+                <h1>Seja bem-vindo à ES Sports!</h1>
+                <br>
+                <br>
+                <h3>Aqui você irá encontrar os melhores materiais esportivos!</h3>
+                <br>
+                <h3> Clique na aba <b>"Produtos"</b> para conhecer nossas ofertas:</h3>
+                <br>
+            </section>
+            <br>
+            <br>
+            <section id="feedback">
+                <form action="#" method="post">
+                    <label id="label" for="mensagem">Deixe seu comentário, isso nos ajuda a melhorar!</label>
+                    <br>
+                    <br>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui..."></textarea>
+                    <br>
+                    <br>
+                    <button id="botao-enviar" type="submit" value="Enviar"> Enviar</button>
+                </form>
+            </section>
+            <br>
+        </div>
+        <hr style="border:none;background-color:#eea707;height:5px;width:100%;">
+    </body>
+</div>
+<div class="footer">
     <footer>
         <p>&copy; 2026 ES Sports. Todos os direitos reservados.</p>
     </footer>
 </div>
-</div>
+
 </html>
